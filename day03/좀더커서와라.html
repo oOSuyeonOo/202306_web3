@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        출생년도를 입력 받은 뒤
+        성인일경우 판매 = 20살 이상일 경우 판매
+        성인이 아닐경우 몇년 뒤 다시 오라는 메세지 출력
+    -->
+
+    <script>
+        const birthYear = Number(prompt('출생년도를 입력하세요'));
+        const userAge = 2023 - birthYear + 1;
+
+        //조건 ? 참일때 : 거짓일떄
+
+        userAge >= 20 ? alert('구매가능') : alert(`${20 - userAge}년뒤에 구매 가능`)
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Peach = Number(prompt('복숭아 갯수를 입력하세요'));
+        let basket = Math.floor(Peach/10);
+
+        if(Peach % 10 !== 0) {
+            basket++;
+        }
+        alert(basket)
+    </script>
+</body>
+</html>
